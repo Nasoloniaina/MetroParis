@@ -34,3 +34,15 @@ C:\Users\Nasoloniaina\Documents\Visual Studio 2015\Projects\PROJETS_ASPNET\Metro
 C:\Users\Nasoloniaina\Documents\Visual Studio 2015\Projects\PROJETS_ASPNET\MetroParis\MetroParis\obj\x86\Debug\MetroParis.g.resources
 C:\Users\Nasoloniaina\Documents\Visual Studio 2015\Projects\PROJETS_ASPNET\MetroParis\MetroParis\obj\x86\Debug\MetroParis.Properties.Resources.resources
 C:\Users\Nasoloniaina\Documents\Visual Studio 2015\Projects\PROJETS_ASPNET\MetroParis\MetroParis\obj\x86\Debug\MetroParis.csproj.GenerateResource.Cache
+D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis.exe
+D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis.pdb
+D:\MetroNas\MetroParis\MetroParis\bin\Debug\MetroParis.exe
+D:\MetroNas\MetroParis\MetroParis\bin\Debug\MetroParis.pdb
+D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis.csprojResolveAssemblyReference.cache
+D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MainWindow.baml
+D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MainWindow.g.cs
+D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\App.g.cs
+D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis_MarkupCompile.cache
+D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis.g.resources
+D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis.Properties.Resources.resources
+D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis.csproj.GenerateResource.Cache
