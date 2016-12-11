@@ -46,3 +46,15 @@ D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis_MarkupCompile.cache
 D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis.g.resources
 D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis.Properties.Resources.resources
 D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis.csproj.GenerateResource.Cache
+D:\GIT\MetroParis\MetroParis\MetroParis\MetroParis\obj\x86\Debug\MetroParis.exe
+D:\GIT\MetroParis\MetroParis\MetroParis\MetroParis\obj\x86\Debug\MetroParis.pdb
+D:\GIT\MetroParis\MetroParis\MetroParis\MetroParis\bin\Debug\MetroParis.exe
+D:\GIT\MetroParis\MetroParis\MetroParis\MetroParis\bin\Debug\MetroParis.pdb
+D:\GIT\MetroParis\MetroParis\MetroParis\MetroParis\obj\x86\Debug\MetroParis.csprojResolveAssemblyReference.cache
+D:\GIT\MetroParis\MetroParis\MetroParis\MetroParis\obj\x86\Debug\MainWindow.baml
+D:\GIT\MetroParis\MetroParis\MetroParis\MetroParis\obj\x86\Debug\MainWindow.g.cs
+D:\GIT\MetroParis\MetroParis\MetroParis\MetroParis\obj\x86\Debug\App.g.cs
+D:\GIT\MetroParis\MetroParis\MetroParis\MetroParis\obj\x86\Debug\MetroParis_MarkupCompile.cache
+D:\GIT\MetroParis\MetroParis\MetroParis\MetroParis\obj\x86\Debug\MetroParis.g.resources
+D:\GIT\MetroParis\MetroParis\MetroParis\MetroParis\obj\x86\Debug\MetroParis.Properties.Resources.resources
+D:\GIT\MetroParis\MetroParis\MetroParis\MetroParis\obj\x86\Debug\MetroParis.csproj.GenerateResource.Cache
