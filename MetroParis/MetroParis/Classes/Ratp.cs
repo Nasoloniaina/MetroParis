@@ -17,11 +17,11 @@ namespace MetroParis.Classes
         MainWindow window0;
 
         public static List<Solution> sols = new List<Solution>();
-        
 
-        string allText;       
 
-        List<Station> StationsVisitees; 
+        string allText;
+
+        List<Station> StationsVisitees;
 
         double totalCout;
         bool[] visited;
@@ -30,11 +30,11 @@ namespace MetroParis.Classes
         /// <summary>
         /// Constructeur
         /// </summary>
-        public Ratp(MainWindow _w0) 
+        public Ratp(MainWindow _w0)
         {
             this.window0 = _w0;
-            if (!Init()) return; 
-  
+            if (!Init()) return;
+
             int strtStationIndex = (new Random()).Next(0, Utilitaires.stations.Count() - 1);
 
             // Generation aleatoire de la station de depart
@@ -43,18 +43,18 @@ namespace MetroParis.Classes
                 this.startStation = Utilitaires.stations.Where(x => x.Numero == strtStationIndex).First();
                 strtStationIndex = (new Random()).Next(0, Utilitaires.stations.Count() - 1);
             }
-                        
+
             //this.startStation = this.Utilitaires.stations.Where(x => x.Numero == 67).First();
         }
 
 
-        public void SetStartStation(Station _s) 
+        public void SetStartStation(Station _s)
         {
             this.startStation = _s;
         }
 
 
-        public Station GetStartStation() 
+        public Station GetStartStation()
         {
             return this.startStation;
         }
@@ -69,8 +69,8 @@ namespace MetroParis.Classes
         private Station GetUnvisitedChildNode(Station _s, out double arcValue)
         {
             int index = Utilitaires.stations.IndexOf(_s);
-            arcValue = -1;            
-            int j = 0;           
+            arcValue = -1;
+            int j = 0;
 
             int rnd = new Random().Next(0, 2);
 
@@ -111,15 +111,15 @@ namespace MetroParis.Classes
                         }
                         j--;
                     }
-                    break;                    
-            }       
+                    break;
+            }
             return null;
         }
 
-	
-        private bool IsAllVisited(Dictionary<int, bool> _dict) 
+
+        private bool IsAllVisited(Dictionary<int, bool> _dict)
         {
-            foreach (var a in _dict) 
+            foreach (var a in _dict)
             {
                 if (!a.Value)
                     return false;
@@ -137,7 +137,7 @@ namespace MetroParis.Classes
         public Solution ParcourirMetros(out double totalval)
         {
             window0.Dispatcher.BeginInvoke(DispatcherPriority.Background, new Action(() => window0.ClearUnusedControls()));
-                     
+
             Solution solution = new Solution();
 
             double arcval = -1;
@@ -162,7 +162,7 @@ namespace MetroParis.Classes
                 }
 
                 Station n = (Station)stack.Peek();
-                
+
                 Station child = GetUnvisitedChildNode(n, out arcval);
 
                 // Si il y a un fils, donc parcourir le fils
@@ -170,7 +170,7 @@ namespace MetroParis.Classes
                 {
                     int ind = Utilitaires.stations.IndexOf(child);
 
-                    Utilitaires.stations[ind].WasVisited = true;                  
+                    Utilitaires.stations[ind].WasVisited = true;
                     allText += PrintStation(child);
                     solution.Stations.Add(child);
                     stack.Push(child);
@@ -211,7 +211,7 @@ namespace MetroParis.Classes
                 {
                     // Il n'y a pas de noeud fils, on redescend
                     Station before = (Station)stack.Peek();
-                    stack.Pop();                    
+                    stack.Pop();
 
                     if (stack.Count > 0)
                     {
@@ -223,7 +223,7 @@ namespace MetroParis.Classes
                         allText += PrintStation((Station)stack.Peek());
                         solution.Stations.Add((Station)stack.Peek());
                     }
-                }                
+                }
             }
             totalval = totalCout;
 
@@ -235,17 +235,17 @@ namespace MetroParis.Classes
             ClearStation();
             return solution;
         }
-        
+
 
         /// <summary>
         /// Reset de l'etat des Utilitaires.stations a non visité
         /// </summary>
-        private void ClearStation() 
+        private void ClearStation()
         {
             int i = 0;
             while (i < Utilitaires.stations.Count)
             {
-                Utilitaires.stations[i].WasVisited = false;               
+                Utilitaires.stations[i].WasVisited = false;
                 i++;
             }
         }
@@ -255,7 +255,7 @@ namespace MetroParis.Classes
         /// </summary>
         /// <param name="_s"></param>
         /// <returns></returns>
-        private string PrintStation(Station _s) 
+        private string PrintStation(Station _s)
         {
             return string.Format("{0} ({1})\n", _s.Numero, _s.Nom);
         }
@@ -275,15 +275,15 @@ namespace MetroParis.Classes
         /// Initialisation des valeurs a traiter
         /// </summary>
         /// <returns></returns>
-        public bool Init() 
+        public bool Init()
         {
             try
             {
                 totalCout = 0;
                 allText = "";
                 StationsVisitees = new List<Station>();
-                visited = new bool[376];  
-              
+                visited = new bool[376];
+
                 for (int i = 0; i < visited.Length; i++)
                 {
                     visited[i] = false;
@@ -292,12 +292,12 @@ namespace MetroParis.Classes
 
                 return true;
             }
-            catch (Exception) 
+            catch (Exception)
             {
                 return false;
             }
         }
-        
+
 
         /// <summary>
         /// Fonction qui sert a supprimer les elements de la solution precedente de l'affichage graphique
@@ -310,6 +310,7 @@ namespace MetroParis.Classes
                 var actualChild = window0.grid1.Children[i];
                 if (actualChild is Line)
                 {
+                    // all code must be refactored
                     SolidColorBrush controlColor = (SolidColorBrush)(((Line)actualChild).Stroke);
                     SolidColorBrush referenceColor = new SolidColorBrush(Colors.Red);
 

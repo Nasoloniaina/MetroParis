@@ -46,3 +46,5 @@ D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis_MarkupCompile.cache
 D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis.g.resources
 D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis.Properties.Resources.resources
 D:\MetroNas\MetroParis\MetroParis\obj\x86\Debug\MetroParis.csproj.GenerateResource.Cache
+C:\Users\nasol\OneDrive\Documents\GitHub\MetroParis\MetroParis\MetroParis\obj\x86\Debug\MetroParis.exe
+C:\Users\nasol\OneDrive\Documents\GitHub\MetroParis\MetroParis\MetroParis\obj\x86\Debug\MetroParis.pdb
